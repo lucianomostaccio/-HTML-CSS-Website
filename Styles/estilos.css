@@ -1,0 +1,388 @@
+/* reset estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Estilos para la barra de navegación */
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: rgb(0,0,0); /* Establecer un color de fondo para la barra de navegación */
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li a {
+  text-decoration: none; /* Eliminar el subrayado de los enlaces */
+  color: white; /* Establecer color de texto */
+  display: flex;
+  padding: 1rem;
+}
+nav ul li a:hover:not(.active) {
+  background-color: rgb(19,18,18); /* Establecer un color de fondo al pasar el cursor sobre los botones */
+}
+
+nav ul li a.active {
+  background-color: #04aa6d;
+}
+
+.logo {
+  width: 3.05rem;
+  height: auto;
+  background-color: greenyellow;
+  position: absolute;
+  top: 0;
+  left: 0;
+  grid-area: header;
+}
+
+/* Estilos para el header en teléfonos móvil */
+@media only screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+
+  nav ul li {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  nav ul li a {
+    min-width: 100%;
+    min-height: auto;
+    font-size: 0.75rem;
+  }
+}
+
+main {
+  padding-top: 2rem;
+  background-color: rgb(31, 30, 30);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #ccc;
+}
+
+section {
+  grid-area: section;
+}
+
+.descripcionnegocio {
+  grid-area: section;
+}
+
+
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #04aa6d;
+}
+
+.imghome {
+  width: 600px;
+  height: 200px;
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 1rem 4rem 1rem;
+  text-align: justify;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.listaservicios {
+  margin-bottom: 4rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.razoneselegirnos {
+  margin-bottom: 3rem;
+}
+
+.imagenesclientes {
+  text-align: center;
+}
+
+.imagenesclientes img {
+  padding-left: 4rem;
+}
+
+/*Estilos para celulares del index */
+@media only screen and (max-width: 768px) {
+  .imghome {
+    width: 15rem;
+    height: 15rem;
+    display: block;
+    margin: 0 auto 2rem;
+  }
+
+  .listaservicios {
+    border: #04aa6d;
+    border-style: double;
+  }
+
+  .razoneselegirnos {
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  .imagenesclientes img {
+    padding-left: 0;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+
+/*Página Nosotros*/
+
+.container {
+  display: table;
+  width: 100%;
+}
+
+.box {
+  display: table-cell;
+  width: 33.33%;
+  text-align: center;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.descrippersonas {
+  text-align: center;
+}
+
+/*Pagina Servicios*/
+
+.textoservicio {
+  margin-bottom: 4rem;
+}
+
+.iframe {
+  text-align: center;
+}
+
+.iframecelu {
+  display: none;
+}
+
+.servicios {
+  display: table;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.serv {
+  display: table-cell;
+  width: 33.33%;
+  text-align: center;
+  margin: 10px;
+  vertical-align: top;
+}
+
+/*Pagina Portfolio*/
+
+.trabajos {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+  border-color: white;
+  border-width: 2px;
+}
+
+.titulotrabajos {
+  background-color: black;
+}
+
+/*Página Servicios para móvil*/
+@media (max-width: 768px) {
+  .servicios {
+    display: block;
+  }
+  .serv {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .iframe {
+    display: none;
+  }
+  .iframecelu {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+  }
+}
+
+/*Página Nosotros para móvil*/
+@media (max-width: 768px) {
+  .container {
+    display: block;
+  }
+  .box {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+/*Página Porfolio para móvil*/
+
+@media (max-width: 768px) {
+  .trabajos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trabajos img {
+    width: 50%;
+  }
+}
+
+/*Estilos para el formulario de contacto */
+
+/* Estilos form para tamaño de pantalla grande */
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 40%;
+  margin: -10px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  margin-top: 5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+input[type="text"],
+input[type="email"],
+#pais,
+textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.checks {
+  color: black;
+  font-size: small;
+  margin-bottom: 0.5rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: none;
+}
+
+/*estilos para que el formulario se adapte a dispositivos móviles*/
+@media (max-width: 768px) {
+  form {
+    width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  form label {
+    font-size: 12px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .checks {
+    display: none;
+  }
+
+  .buttons {
+    display: block;
+  }
+
+  button {
+    background-color: white;
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 0.7rem;
+  }
+
+  button:active {
+    background-color: #45a049;
+  }
+
+  form input[type="submit"] {
+    width: 40%;
+    height: 1%;
+    margin: auto;
+  }
+}
+
+/* Estilos para el footer */
+footer {
+  grid-area: footer;
+  background-color: black;
+  margin-top: auto;
+  padding: 1em 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}

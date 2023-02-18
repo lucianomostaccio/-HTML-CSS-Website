@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Consultora</title>
+    <link rel="icon" href="../Images/Favicon.ico" />
+    <meta name="description" content="pagina" />
+    <!-- <meta name="author" content="Luciano Damian Mostaccio" />
+    <meta name="keywords" content="palabra1, palabra2" />
+    <meta name="robots" index="" />
+    <link rel="apple-touch-icon" href="../Images/logo192.png" /> -->
+    <link rel="stylesheet" href="../Styles/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <!-- barra navegación -->
+      <img
+        class="logo"
+        src="https://www.datacomplianceeurope.eu/wp-content/uploads/2016/12/logo-placeholder.png"
+        alt="logo-placeholder"
+      />
+      <nav>
+        <!-- botones navegación -->
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a class="active" href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="formpage">
+      <div class="content">
+        <div class="form">
+          <form action="enviar_mensaje.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+              <option value="">Seleccione un pais</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Bolivia">Bolivia</option>
+              <option value="Chile">Chile</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Cuba">Cuba</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="El Salvador">El Salvador</option>
+              <option value="España">España</option>
+              <option value="Guatemala">Guatemala</option>
+              <option value="Honduras">Honduras</option>
+              <option value="México">México</option>
+              <option value="Nicaragua">Nicaragua</option>
+              <option value="Panamá">Panamá</option>
+              <option value="Paraguay">Paraguay</option>
+              <option value="Perú">Perú</option>
+              <option value="Puerto Rico">Puerto Rico</option>
+              <option value="República Dominicana">República Dominicana</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Venezuela">Venezuela</option>
+            </select>
+
+            <label for="servicios">Servicios requeridos:</label>
+            <div class="checks">
+              <input
+                type="checkbox"
+                id="desarrollo_aplicaciones"
+                name="servicios"
+                value="Desarrollo de aplicaciones"
+                required
+              />
+              Desarrollo de aplicaciones
+              <input
+                type="checkbox"
+                id="desarrollo_sitios_web"
+                name="servicios"
+                value="Desarrollo de sitios web"
+                required
+              />
+              Desarrollo de sitios web
+              <input
+                type="checkbox"
+                id="campanas_marketing_digital"
+                name="servicios"
+                value="Campañas de marketing digital"
+                required
+              />
+              Campañas de marketing digital
+            </div>
+            <div class="buttons">
+              <button>Desarrollo de aplicaciones</button>
+              <button>Desarrolo sitios web</button>
+              <button>Marketing digital</button>
+            </div>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#top">Ir arriba</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#politica">Política de privacidad</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
