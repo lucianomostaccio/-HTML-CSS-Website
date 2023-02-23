@@ -11,21 +11,19 @@
     <!-- <meta name="keywords" content="palabra1, palabra2" /> -->
     <!-- <meta name="robots" index="" /> -->
     <!-- <link rel="apple-touch-icon" href="Images/logo192.png" /> -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="Styles/estilos.css" />
   </head>
-  <body>
-  <div id="grid_container">
+    <body>
     <header>
       <!-- barra navegación -->
       <img
         class="logo"
         src="https://www.datacomplianceeurope.eu/wp-content/uploads/2016/12/logo-placeholder.png"
-        alt="logo-placeholder"
-      />
+        alt="logo-placeholder"      />
       <nav>
         <!-- botones navegación -->
-        <ul>
+        <ul class="list-unstyled">
           <li><a class="active" href="index.html">Inicio</a></li>
           <li><a href="Pages/nosotros.html">Nosotros</a></li>
           <li><a href="Pages/servicios.html">Servicios</a></li>
@@ -33,68 +31,112 @@
           <li><a href="Pages/contacto.html">Contacto</a></li>
         </ul>
       </nav>
+      <!-- navegación para mobile con bootstrap -->
+      <div class="navmobile">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-black p-4">
+            <h5 class="text-white h4">Navegación</h5>
+            <ul class="list-unstyled" id="navmobilelist">
+              <li><a class="active" href="index.html">Inicio</a></li>
+              <li><a href="Pages/nosotros.html">Nosotros</a></li>
+              <li><a href="Pages/servicios.html">Servicios</a></li>
+              <li><a href="Pages/portfolio.html">Portfolio</a></li>
+              <li><a href="Pages/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-black">
+          <div class="container-fluid">
+            <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarToggleExternalContent" 
+            aria-controls="navbarToggleExternalContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <!-- Resto del contenido -->
-    <div class="sections">
-    <main>
-      <section>
-        <!-- Contenido -->
-        <!-- Título principal-->
-        <h1>Consultora</h1>
-          <article class="descripcionnegocio">
-            <!-- descripción -->
-            <img
-              class="imghome"
-              src="https://via.placeholder.com/150"
-              alt="imagen 1 presentación"
-            />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque
-              impedit obcaecati vel commodi optio molestiae pariatur quia fugiat
-              adipisci, quibusdam quis nesciunt temporibus iusto accusamus dolores
-              tempore ratione consectetur! Odio rem nam modi expedita neque
-              deleniti, unde voluptatum exercitationem debitis rerum. Recusandae
-              dolor dicta adipisci doloremque aspernatur tenetur sed quo
-              voluptates nisi, sapiente, animi, hic dolore perspiciatis. Tempora,
-              deserunt? Beatae minima ad optio, labore maxime quis ducimus quaerat
-              id quos dolor quidem. Deserunt, culpa quae cupiditate soluta atque
-              praesentium, sequi, et repellat nulla molestiae quia voluptatum vel?
-              Aspernatur, labore. Blanditiis unde est consequatur ullam nesciunt
-              animi sed a recusandae repudiandae. Nesciunt assumenda impedit
-              ducimus, perferendis officia est tempora velit! Odit doloremque
-              reprehenderit nisi modi inventore incidunt harum earum vero.
-            </p>
-            <h2>Nuestros servicios</h2>
-            <ol class="listaservicios">
-              <li>Desarrollo de aplicaciones</li>
-              <li>Desarrollo de sitios web</li>
-              <li>Campañas de marketing digital</li>
-            </ol>
-          </article>
-          <article class="razoneselegirnos">
-            <!--por qué elegirnos-->
-            <h2>Nuestra experiencia nos avala</h2>
-            <h3>Algunos de nuestros clientes son:</h3>
-            <div class="imagenesclientes">
-              <img src="https://via.placeholder.com/150" alt="image1" />
-              <img src="https://via.placeholder.com/150" alt="image2" />
-              <img src="https://via.placeholder.com/150" alt="image3" />
-              <img src="https://via.placeholder.com/150" alt="image4" />
-            </div>
-          </article>
-      </section>
-    </main>
-    </div>
-    <footer>
-      <ul>
-        <li><a href="#top">Ir arriba</a></li>
-        <li><a href="pages/contacto.html">Contacto</a></li>
-        <li><a href="#politica">Política de privacidad</a></li>
-      </ul>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+      <!-- Resto del contenido -->
+      <div class="sections">
+      <main>
+        <section>
+          <!-- Contenido -->
+          <!-- Título principal-->
+          <h1>Consultora</h1>
+            <article class="descripcionnegocio">
+              <!-- descripción -->
+              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://blog.axway.com/wp-content/uploads/2018/05/application-development-2708214563-1527665098909-1.png" class="mx-auto d-block w-700" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://consultoramontecinos.cl/wp-content/uploads/2020/04/312d6162-planificacion_medios_sociales.jpg" class="mx-auto d-block w-1500" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1536x1177.jpg" class="mx-auto d-block w-700" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque
+                impedit obcaecati vel commodi optio molestiae pariatur quia fugiat
+                adipisci, quibusdam quis nesciunt temporibus iusto accusamus dolores
+                tempore ratione consectetur! Odio rem nam modi expedita neque
+                deleniti, unde voluptatum exercitationem debitis rerum. Recusandae
+                dolor dicta adipisci doloremque aspernatur tenetur sed quo
+                voluptates nisi, sapiente, animi, hic dolore perspiciatis. Tempora,
+                deserunt? Beatae minima ad optio, labore maxime quis ducimus quaerat
+                id quos dolor quidem. Deserunt, culpa quae cupiditate soluta atque
+                praesentium, sequi, et repellat nulla molestiae quia voluptatum vel?
+                Aspernatur, labore. Blanditiis unde est consequatur ullam nesciunt
+                animi sed a recusandae repudiandae. Nesciunt assumenda impedit
+                ducimus, perferendis officia est tempora velit! Odit doloremque
+                reprehenderit nisi modi inventore incidunt harum earum vero.
+              </p>
+              <h2>Nuestros servicios</h2>
+              <ol class="listaservicios" list-unstyled >
+                <li>Desarrollo de aplicaciones</li>
+                <li>Desarrollo de sitios web</li>
+                <li>Campañas de marketing digital</li>
+              </ol>
+            </article>
+            <article class="razoneselegirnos">
+              <!--por qué elegirnos-->
+              <h2>Nuestra experiencia nos avala</h2>
+              <h3>Algunos de nuestros clientes son:</h3>
+              <div class="imagenesclientes">
+                <img src="https://via.placeholder.com/150" alt="image1" />
+                <img src="https://via.placeholder.com/150" alt="image2" />
+                <img src="https://via.placeholder.com/150" alt="image3" />
+                <img src="https://via.placeholder.com/150" alt="image4" />
+              </div>
+            </article>
+        </section>
+      </main>
+      </div>
+      <footer class="footer_container">
+        <ul class="list-unstyled">
+          <li><a href="#top">Ir arriba</a></li>
+          <li><a href="pages/contacto.html">Contacto</a></li>
+          <li><a href="#politica">Política de privacidad</a></li>
+        </ul>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
   </div>
 </html>
