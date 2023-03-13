@@ -110,7 +110,7 @@ main {
 }
 
 .banner {
-  background-image: url("https://lucianomostaccio.github.io/PreEntrega2Mostaccio/Images/green4.jpg");
+  background-image: url("../Images/green4.jpg");
   background-size: cover;
   width: 100%;
   display: flex;
