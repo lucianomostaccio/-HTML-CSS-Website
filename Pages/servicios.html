@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Consultora</title>
-    <link rel="icon" href="Images/Favicon.ico" />
+    <link rel="icon" href="../Images/logo/favicon.png" />
     <meta name="description" content="pagina" />
     <!-- <meta name="author" content="Luciano Damian Mostaccio" /> -->
     <!-- <meta name="keywords" content="palabra1, palabra2" /> -->
@@ -17,23 +17,19 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../Styles/estilos.css" />
   </head>
   <body>
     <header>
       <!-- barra navegación -->
-      <img
-        class="logo"
-        src="https://www.datacomplianceeurope.eu/wp-content/uploads/2016/12/logo-placeholder.png"
-        alt="logo-placeholder"
-      />
       <nav>
         <!-- botones navegación -->
         <ul>
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="./nosotros.html">Nosotros</a></li>
           <li><a class="active" href="./servicios.html">Servicios</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./portafolio.html">Portfolio</a></li>
           <li><a href="./contacto.html">Contacto</a></li>
         </ul>
       </nav>
@@ -46,7 +42,7 @@
               <li><a href="../index.html">Inicio</a></li>
               <li><a href="./nosotros.html">Nosotros</a></li>
               <li><a class="active" href="./servicios.html">Servicios</a></li>
-              <li><a href="./portfolio.html">Portfolio</a></li>
+              <li><a href="./portafolio.html">Portafolio</a></li>
               <li><a href="./contacto.html">Contacto</a></li>
             </ul>
           </div>
@@ -72,42 +68,27 @@
     <!-- Resto del contenido -->
     <main>
       <!-- Título principal-->
-      <h1>Servicios</h1>
       <section>
+        <div class="banner">
+          <h1 class="titulo_principal"> Servicios</h1>
+          <p class="slogan">Desarrollo y marketing digital de primer nivel, al alcance de todos</p>
+          <img
+          class="logo"
+          src="../Images/logo/logo.png"
+          alt="logo consultora digital LM"      
+          />
+        </div>   
         <!-- Contenido -->
         <article class="textoservicio">
           <!-- descripción -->
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque
-            impedit obcaecati vel commodi optio molestiae pariatur quia fugiat
-            adipisci, quibusdam quis nesciunt temporibus iusto accusamus dolores
-            tempore ratione consectetur! Odio rem nam modi expedita neque
-            deleniti, unde voluptatum exercitationem debitis rerum. Recusandae
-            dolor dicta adipisci doloremque aspernatur tenetur sed quo
-            voluptates nisi, sapiente, animi, hic dolore perspiciatis. Tempora,
-            deserunt? Beatae minima ad optio, labore maxime quis ducimus quaerat
-            id quos dolor quidem. Deserunt, culpa quae cupiditate soluta atque
-            praesentium, sequi, et repellat nulla molestiae quia voluptatum vel?
-            Aspernatur, labore. Blanditiis unde est consequatur ullam nesciunt
-            animi sed a recusandae repudiandae. Nesciunt assumenda impedit
-            ducimus, perferendis officia est tempora velit! Odit doloremque
-            reprehenderit nisi modi inventore incidunt harum earum vero.
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque
-            impedit obcaecati vel commodi optio molestiae pariatur quia fugiat
-            adipisci, quibusdam quis nesciunt temporibus iusto accusamus dolores
-            tempore ratione consectetur! Odio rem nam modi expedita neque
-            deleniti, unde voluptatum exercitationem debitis rerum. Recusandae
-            dolor dicta adipisci doloremque aspernatur tenetur sed quo
-            voluptates nisi, sapiente, animi, hic dolore perspiciatis. Tempora,
-            deserunt? Beatae minima ad optio, labore maxime quis ducimus quaerat
-            id quos dolor quidem. Deserunt, culpa quae cupiditate soluta atque
-            praesentium, sequi, et repellat nulla molestiae quia voluptatum vel?
-            Aspernatur, labore. Blanditiis unde est consequatur ullam nesciunt
-            animi sed a recusandae repudiandae. Nesciunt assumenda impedit
-            ducimus, perferendis officia est tempora velit! Odit doloremque
-            reprehenderit nisi modi inventore incidunt harum earum vero.
+            En Consultora Digital LM, ofrecemos una amplia gama de servicios en el campo del desarrollo de software y marketing digital. Ofrecemos soluciones personalizadas para empresas en todo Latinoamérica. Como empresa joven pero altamente capacitada, brindamos experiencia experta y calidad en cada uno de nuestros servicios.
+          </p>
+          <p>
+            Consultora Digital LM ofrece soluciones personalizadas para abordar todas las necesidades de desarrollo de software, sitios web y marketing digital de su empresa. Ya sea un proyecto simple o complejo, nuestro equipo altamente capacitado se asegurará de trabajar con usted en cada etapa del camino para garantizar los mejores resultados posibles. Nos asociamos con nuestros clientes desde el inicio del proyecto hasta el final para garantizar resultados excepcionales. 
+          </p>
+          <p>
+            No dude en ponerse en contacto con nosotros para conocer más detalles sobre nuestros servicios en toda la región latinoamericana.
           </p>
           <div class="iframe">
             <iframe
@@ -134,36 +115,24 @@
           </div>
         </article>
         <article>
-          <h1 class="tituloservicios">Nuestros servicios</h1>
+          <h2 class="tituloservicios" data-aos="zoom-in">Nuestros servicios</h1>
           <div class="servicios">
-            <div class="serv">
+            <div data-aos="fade-up" class="serv">
               <h2>Desarrollo de aplicaciones</h2>
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Foto desarrollo"
-              />
               <p class="descrippersonas">
-                Breve descripción de desarrolo de aplicaciones.
+                El desarrollo de aplicaciones móviles es crucial para expandir el alcance de cualquier negocio en la era digital. Nuestro equipo de desarrolladores altamente capacitados tiene experiencia en el desarrollo de aplicaciones móviles tanto para Android como para iOS. Además, nuestro desarrollo de software de escritorio se centra en proporcionar soluciones personalizadas y escalables para satisfacer las necesidades de nuestros clientes.
               </p>
             </div>
-            <div class="serv">
+            <div data-aos="fade-up" class="serv">
               <h2>Desarrollo de sitios web</h2>
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Foto desarrollo"
-              />
               <p class="descrippersonas">
-                Breve descripción de desarrolo de sitios web.
+                La creación de un sitio web efectivo es imprescindible para aumentar la visibilidad de una empresa y llegar a un público más amplio. En Consultora Digital LM, diseñamos y desarrollamos sitios web que reflejan la identidad de su marca y funcionan perfectamente en todos los dispositivos y navegadores. Nos aseguramos de mantenernos actualizados con las últimas tendencias de diseño para ofrecer las mejores opciones para nuestros clientes.
               </p>
             </div>
-            <div class="serv">
-              <h2>Campañas de marketing digital</h2>
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Foto desarrollo"
-              />
+            <div data-aos="fade-up" class="serv">
+              <h2>Marketing digital</h2>
               <p class="descrippersonas">
-                Breve descripción de campañas marketing digital.
+                El marketing digital se ha convertido en una herramienta crucial en la actualidad para impulsar su presencia en línea. Desde la optimización de motores de búsqueda (SEO) hasta la publicidad en línea, nuestro equipo de expertos lo cubre todo. Ofrecemos servicios de estrategia en redes sociales, publicidad en Google y asesoramiento de contenido para ayudarlo a lograr sus objetivos de marketing.
               </p>
             </div>
           </div>
@@ -173,7 +142,7 @@
     <footer>
       <ul class="list-unstyled">
         <li><a href="#top">Ir arriba</a></li>
-        <li><a href="pages/contacto.html">Contacto</a></li>
+        <li><a href="Pages/contacto.html">Contacto</a></li>
         <li><a href="#politica">Política de privacidad</a></li>
       </ul>
     </footer>
@@ -182,5 +151,9 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

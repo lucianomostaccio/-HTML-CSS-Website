@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Consultora</title>
+    <link rel="icon" href="../Images/logo/favicon.png" />
+    <meta name="description" content="pagina" />
+    <!-- <meta name="author" content="Luciano Damian Mostaccio" /> -->
+    <!-- <meta name="keywords" content="palabra1, palabra2" /> -->
+    <!-- <meta name="robots" index="" /> -->
+    <!-- <link rel="apple-touch-icon" href="Images/logo192.png" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Styles/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <!-- barra navegación -->
+      <nav>
+        <!-- botones navegación -->
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a class="active" href="./portafolio.html">Portafolio</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- navegación para mobile con bootstrap -->
+      <div class="navmobile">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-black p-4">
+            <h5 class="text-white h4">Navegación</h5>
+            <ul class="list-unstyled" id="navmobilelist">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="./nosotros.html">Nosotros</a></li>
+              <li><a href="./servicios.html">Servicios</a></li>
+              <li><a class="active" href="./portafolio.html">Portafolio</a></li>
+              <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-black">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Resto del contenido -->
+    <main>
+      <!-- Título principal-->
+      <section>
+        <div class="banner">
+          <h1 class="titulo_principal"> Portafolio de trabajos</h1>
+          <p class="slogan">Desarrollo y marketing digital de primer nivel, al alcance de todos</p>
+          <img
+          class="logo"
+          src="../Images/logo/logo.png"
+          alt="logo consultora digital LM"      
+          />
+        </div>   
+        <!-- Contenido -->
+        <article>
+          <!-- descripción -->
+          <p>
+            ¡Bienvenido a nuestro portafolio digital! Aquí podrá encontrar los ejemplos de nuestros trabajos más recientes. Hemos seleccionado una variedad de proyectos que abarcan áreas como desarrollo de aplicaciones, sitios web y marketing digital. Los trabajos están divididos por categorías debajo de las cuales encontrará un conjunto de proyectos seleccionados para cada tipo. Haga clic en la categoría que más le interese para expandir los contenidos y estaremos encantados de responder cualquier pregunta o comentario que pueda tener. Nos esforzamos constantemente para brindar a nuestros clientes resultados excepcionales y esperamos que nuestra experiencia y habilidades sean evidentes en cada uno de nuestros proyectos. ¡Gracias por visitar nuestro portafolio!
+          </p>
+        </article>
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Desarrollo de aplicaciones
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="cardportafolio">
+            <div class="cardportafolio2">
+              <h2 class="titulocardsportafolio">Viajes Perfectos</h2>
+              <p class="textocardsportafolio"> Aplicación móvil que permite a los usuarios planificar y reservar sus vacaciones. Cuenta con información detallada sobre cada destino, que incluye fotos, opiniones, y precios de distintos servicios, para que los usuarios puedan ajustar su presupuesto durante el proceso de compra. </p>
+            </div>
+          </div>
+          <div class="cardportafolio">
+            <div class="cardportafolio2">
+              <h2 class="titulocardsportafolio">Lenceria Fina</h2>
+              <p class="textocardsportafolio"> Aplicación personalizada que les permitió ampliar su presencia en el mercado online. Los clientes pueden navegar por la selección de productos, hacer pedidos desde la app e incluso utilizar herramientas como la «Tabla de Tallas».</p>
+            </div>
+          </div>
+          <div class="cardportafolio">
+            <div class="cardportafolio2">
+              <h2 class="titulocardsportafolio">Hogar Ya</h2>
+              <p class="textocardsportafolio"> Aplicación que permite a los usuarios solicitar rápidamente cualquier tipo de servicio de limpieza. Con un clic, los clientes pueden solicitar una limpieza profunda, de alfombras, hogares, ventanas o paredes en pocos minutos.</p>
+            </div>
+          </div>
+          <div class="cardportafolio">
+            <div class="cardportafolio2">
+              <h2 class="titulocardsportafolio">InversiónYa</h2>
+              <p class="textocardsportafolio"> Aplicación donde los usuarios pueden ver y hacer seguimiento en tiempo real en todos sus objetos de inversión con alertas de alta/bajas de valoración y noticias relevantes del mercado. Además, proporciona gráficos y métricas esenciales que permiten a los usuarios tomar decisiones informadas para maximizar el retorno de inversión.</p>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample2"
+            aria-expanded="false"
+            aria-controls="collapseExample2"
+          >
+            Desarrollo web
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample2">
+          <div class="cardportafolio">
+            <div class="cardportafolio2">
+              <h2 class="titulocardsportafolio"> High Clothes</h2>
+              <p class="textocardsportafolio">Diseño y desarrollo de un sitio web de comercio electrónico para una tienda de ropa de alta costura, donde se buscó reflejar la elegancia y sofisticación de la marca. Se implementó una navegación intuitiva y una estructura clara, destacando los detalles de los productos y ofreciendo una experiencia de compra sencilla pero segura.</p>
+            </div>
+          </div>
+          <div class="cardportafolio">
+            <div class="cardportafolio2">
+              <h2 class="titulocardsportafolio"> Fundación Aprendizaje infantil</h2>
+              <p class="textocardsportafolio">Desarrollo y programación de un sitio web para una fundación sin fines de lucro dedicada a la educación infantil. Fue diseñado acorde a las necesidades de la organización, priorizando la accesibilidad y el compromiso social. Se incluyó un sistema de donaciones online seguro y una sección para publicar eventos y novedades.</p>
+            </div>
+          </div>
+          <div class="cardportafolio">
+            <div class="cardportafolio2">
+              <h2 class="titulocardsportafolio"> Datos SA</h2>
+              <p class="textocardsportafolio">Desarrollo y diseño de un sitio web corporativo para una empresa de tecnología especializada en el análisis de datos. El objetivo era destacar su capacidad de innovación y liderazgo, por lo que se optó por un diseño moderno, minimalista y con sentido de movimiento en la página. La usabilidad se enfatizó en el acceso a información clave.</p>
+            </div>
+          </div>
+          <div class="cardportafolio">
+            <div class="cardportafolio2">
+              <h2 class="titulocardsportafolio"> Finanzas Simples SRL</h2>
+              <p class="textocardsportafolio">Rediseño y optimización de un sitio web de servicios financieros para emprendedores. Se trabajó arduamente en simplificar la presentación de los servicios brindados como así también en comunicar correctamente la calidad de atención al cliente, logrando demorar mucho menos en generar confianza para el usuario.</p>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample3"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Marketing digital
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample3">
+          <div class="cardportafolio">
+            <div class="cardportafolio2">
+              <h2 class="titulocardsportafolio">FastFood Now</h2>
+              <p class="textocardsportafolio">Creación de una campaña de publicidad para la cadena de comida rápida FastFood Now, utilizando herramientas publicitarias específicas de Google AdWords y Facebook Ads con el objetivo de aumentar el tráfico y conversión de ventas en locales.</p>
+            </div>
+          </div>
+          <div class="cardportafolio">
+            <div class="cardportafolio2">
+              <h2 class="titulocardsportafolio">Farmaworld</h2>
+              <p class="textocardsportafolio">Creación de un plan de marketing digital integral para Farmaworld, comercializadora de medicamentos y productos farmacéuticos, centrado en aumentar la fidelización de clientes y la satisfacción a través de email-marketing, campañas de SMS, estrategias SEO y Redes Sociales.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul class="list-unstyled">
+        <li><a href="#top">Ir arriba</a></li>
+        <li><a href="Pages/contacto.html">Contacto</a></li>
+        <li><a href="#politica">Política de privacidad</a></li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -49,14 +49,6 @@ nav ul li a.active {
   background-color: #04aa6d;
 }
 
-.logo {
-  width: 3.45rem;
-  height: auto;
-  background-color: #04aa6d;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 /* Estilos para el header en teléfonos móvil */
 @media only screen and (max-width: 768px) {
@@ -67,19 +59,6 @@ nav ul li a.active {
   nav ul {
     display: none;
   }
-
-  /*  nav ul li {
-    width: 100%;
-    overflow: hidden;
-  }
-
-  nav ul li a {
-    min-width: 100%;
-    min-height: auto;
-    font-size: 0.75rem;
-    justify-content: center;
-  }
-  */
 
   .container-fluid {
     margin-top: 1rem;
@@ -131,7 +110,51 @@ main {
   color: #ccc;
 }
 
-h1,
+.banner {
+  background-image: url("../Images/Green4.jpg");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+  height: 25rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.banner .logo {
+  z-index: 1;
+  width: 14rem;
+  height: auto;
+  background-color: #04aa6d;
+  position: absolute;
+  right: 0;
+  margin-right: 10rem;
+  border-style: solid;
+  border-color: GREEN;
+  opacity: 0.95;
+}
+
+
+.titulo_principal {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+  padding-left: 10px;
+}
+
+.banner .slogan {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+
 h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
@@ -167,11 +190,17 @@ h3 {
   text-align: center;
   margin-bottom: 1rem;
   font-size: large;
+  color: #04aa6d;
+}
+
+.nuestrosservicios {
+  margin-bottom: 2rem;
 }
 
 .listaservicios {
   border-style: double;
   border-color: #04aa6d;
+  margin-right: 1px;
 }
 
 .listaservicios li {
@@ -189,11 +218,17 @@ h3 {
 }
 
 .imagenesclientes img {
-  padding-left: 4rem;
+  padding: 3rem;
+  width: 300px;
+  height: 250px;
 }
 
 /*Estilos para celulares del index */
 @media only screen and (max-width: 768px) {
+  .bannerindex {
+    height: 15rem;
+  }
+
   .imghome {
     width: 15rem;
     height: 15rem;
@@ -212,9 +247,8 @@ h3 {
   }
 
   .imagenesclientes img {
-    padding-left: 0;
+    padding: 10px;
     display: block;
-    text-align: center;
     margin: 0 auto;
     margin-bottom: 2rem;
   }
@@ -222,21 +256,90 @@ h3 {
 
 /*Página Nosotros*/
 
-.container {
-  display: table;
+.bannernosotros {
+  background-image: url("../Images/GettyImages-645748552.jpg");
+  background-size: cover;
   width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 25rem;
+  margin-bottom: 2.5rem;
+  margin-top: 0.5rem;
 }
 
-.box {
-  display: table-cell;
+/*cards nosotros*/
+
+.container_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #333;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  margin: 2rem;
+  margin-right: 2.3rem;
   width: 33.33%;
-  text-align: center;
-  margin: 10px;
-  vertical-align: top;
+  height: max-content;
 }
-
-.descrippersonas {
+.card__image {
+  display: flex;
+  justify-content: center;
+}
+.card__image img {
+  width: 90%;
+  width: 200px;
+  height: 15rem;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  object-fit: cover;
+  border-radius: 40px;
+}
+.card__body {
+  flex: 1;
+  padding: 1.5rem;
   text-align: center;
+}
+.card__body p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #afafaf;
+}
+.card__title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  --body-color: #afafaf;
+}
+.card__subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.card__body p:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.card__button {
+  display: inline-block;
+  text-decoration: none;
+  color: #afafaf;
+  padding: 1rem 2.5rem;
+  margin-top: 1rem;
+  border: 2px solid #afafaf;
+  border-radius: 6px;
+}
+.card__button span {
+  display: inline-block;
+  transition: transform 0.25s;
+}
+.card__button:hover span {
+  transform: translateX(0.75rem);
 }
 
 /*Pagina Servicios*/
@@ -254,9 +357,12 @@ h3 {
 }
 
 .servicios {
-  display: table;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   margin-bottom: 1rem;
+  align-items: center;
+  box-shadow: inset 5rem 20rem 20px rgb(0 0 0 / 15%);
 }
 
 .serv {
@@ -267,28 +373,72 @@ h3 {
   vertical-align: top;
 }
 
-/*Pagina Portfolio*/
+/*Pagina Portafolio*/
 
-.trabajos {
-  display: flex;
-  margin: 2rem;
-  justify-content: space-evenly;
-  border-color: white;
-  border-width: 2px;
+.btn.btn-primary {
+  margin-top: 2rem;
 }
 
-.card.card-body {
-  background-color: rgb(31, 30, 30);
-  border-color: #04aa6d;
-  margin: 3px 3px 2rem;
+.cardportafolio {
+  width: 300px;
+  height: 274px;
+  background-image: linear-gradient(163deg, #00ff75 0%, rgb(0, 85, 0) 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+  margin-left: 1rem;
+}
+
+.cardportafolio2 {
+  width: 300px;
+  height: 268px;
+  background-color: #1a1a1a;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.titulocardsportafolio {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.textocardsportafolio{
+  font-size: 14px;  
+}
+
+.collapse.show {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border: #00ff75;
+  border-style: solid;
+  border-width: 0.05rem;
+  border-radius: 15px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: 0.1rem;
+}
+
+.cardportafolio2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.cardportafolio:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
 }
 
 .btn.btn-primary {
   background-color: #04aa6d;
+  --bs-btn-active-bg: #055502;
 }
 
-.descriptrabajos {
-  text-align: start;
+#collapseExample3 {
+  margin-bottom: 2rem;
 }
 
 /*Página Servicios para móvil*/
@@ -313,29 +463,26 @@ h3 {
 }
 
 /*Página Nosotros para móvil*/
-@media (max-width: 768px) {
-  .container {
-    display: block;
+@media only screen and (max-width: 1326px) {
+  .container_cards {
+    display: flex;
+    flex-direction: column;
   }
-  .box {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
+  .card {
+    width: 88vw;
+    height: max-content;
   }
 }
 
 /*Página Porfolio para móvil*/
 
-@media (max-width: 768px) {
-  .trabajos {
+@media (max-width: 1270px) {
+  .collapse.show {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
   }
-
-  .trabajos img {
-    width: 50%;
+  .cardportafolio {
+    margin-bottom: 2rem;
   }
 }
 
@@ -394,6 +541,15 @@ input[type="submit"] {
   color: black;
   font-size: small;
   margin-bottom: 0.5rem;
+  display: flex;
+}
+
+input[type="checkbox"] {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+
+  padding-left: 1rem;
 }
 
 input[type="submit"]:hover {
@@ -412,7 +568,7 @@ input[type="submit"]:hover {
 /*estilos para que el formulario se adapte a dispositivos móviles*/
 @media (max-width: 768px) {
   form {
-    width: 70%;
+    width: 75%;
     margin-top: 2rem;
     margin-bottom: 3rem;
     padding: 1rem;
@@ -481,3 +637,31 @@ footer a {
     justify-items: center;
   }
 }
+
+/* 
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 300px;
+  background-color: #ccc;
+}
+
+/* Definimos la animación */
+/* @keyframes slide-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Aplicamos la animación a todos los elementos .slide */
+/* .slide {
+  animation: slide-animation 5s linear infinite;
+} */

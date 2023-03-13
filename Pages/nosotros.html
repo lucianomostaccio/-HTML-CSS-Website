@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Consultora</title>
-    <link rel="icon" href="Images/Favicon.ico" />
+    <link rel="icon" href="../Images/logo/favicon.png" />
     <meta name="description" content="pagina" />
     <!-- <meta name="author" content="Luciano Damian Mostaccio" /> -->
     <!-- <meta name="keywords" content="palabra1, palabra2" /> -->
@@ -17,23 +17,19 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../Styles/estilos.css" />
   </head>
   <body>
     <header>
       <!-- barra navegación -->
-      <img
-        class="logo"
-        src="https://www.datacomplianceeurope.eu/wp-content/uploads/2016/12/logo-placeholder.png"
-        alt="logo-placeholder"
-      />
       <nav>
         <!-- botones navegación -->
         <ul>
           <li><a href="../index.html">Inicio</a></li>
           <li><a class="active" href="./nosotros.html">Nosotros</a></li>
           <li><a href="./servicios.html">Servicios</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./portafolio.html">Portafolio</a></li>
           <li><a href="./contacto.html">Contacto</a></li>
         </ul>
       </nav>
@@ -46,7 +42,7 @@
               <li><a href="../index.html">Inicio</a></li>
               <li><a class="active" href="./nosotros.html">Nosotros</a></li>
               <li><a href="./servicios.html">Servicios</a></li>
-              <li><a href="./portfolio.html">Portfolio</a></li>
+              <li><a href="./portafolio.html">Portafolio</a></li>
               <li><a href="./contacto.html">Contacto</a></li>
             </ul>
           </div>
@@ -71,54 +67,83 @@
 
     <!-- Resto del contenido -->
     <main>
-      <!-- Título principal-->
-      <h1>Nosotros</h1>
       <section>
         <!-- Contenido -->
+          <!-- Título principal-->
+          <div class="banner">
+            <h1 class="titulo_principal"> Nosotros</h1>
+            <p class="slogan">Desarrollo y marketing digital de primer nivel, al alcance de todos</p>
+            <img
+            class="logo"
+            src="../Images/logo/logo.png"
+            alt="logo consultora digital LM"      
+            />
+          </div>   
         <article>
           <!-- descripción -->
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque
-            impedit obcaecati vel commodi optio molestiae pariatur quia fugiat
-            adipisci, quibusdam quis nesciunt temporibus iusto accusamus dolores
-            tempore ratione consectetur! Odio rem nam modi expedita neque
-            deleniti, unde voluptatum exercitationem debitis rerum. Recusandae
-            dolor dicta adipisci doloremque aspernatur tenetur sed quo
-            voluptates nisi, sapiente, animi, hic dolore perspiciatis. Tempora,
-            deserunt? Beatae minima ad optio, labore maxime quis ducimus quaerat
-            id quos dolor quidem. Deserunt, culpa quae cupiditate soluta atque
-            praesentium, sequi, et repellat nulla molestiae quia voluptatum vel?
-            Aspernatur, labore. Blanditiis unde est consequatur ullam nesciunt
-            animi sed a recusandae repudiandae. Nesciunt assumenda impedit
-            ducimus, perferendis officia est tempora velit! Odit doloremque
-            reprehenderit nisi modi inventore incidunt harum earum vero.
+            Consultora Digital LM es una empresa de servicios especializada en el desarrollo de aplicaciones y sitios web de alta calidad, así como en la implementación de estrategias de marketing digital efectivas. Con sede en Argentina, nos hemos comprometido a brindar soluciones e innovación a empresas de toda Latinoamérica.
+            A pesar de ser relativamente nuevos en el mercado, nuestro equipo está formado por profesionales altamente capacitados con amplia experiencia en el sector. Estamos dedicados a cubrir todas las necesidades de nuestros clientes y ofrecer un servicio integral y personalizado.
           </p>
+          <p>
+            <br />
+            Contamos con un equipo multidisciplinario compuesto por expertos en programación, diseño gráfico, marketing digital y consultoría empresarial, lo que nos permite abordar cualquier proyecto con éxito garantizado.
+            En Consultora Digital LM nos enfocamos en resultados efectivos y duraderos, siempre adoptando las últimas tecnologías y herramientas disponibles para estar a la vanguardia en el ámbito del desarrollo y marketing digital.
+            Nuestro compromiso es continuar creciendo junto a nuestros clientes y brindar siempre el mejor servicio posible, adaptándonos a sus necesidades específicas y superando expectativas gracias a nuestra pasión por la innovación y la excelencia en cada detalle.
+          </p>
+        </article>
+     
+          <h2 class="integrantes">Integrantes</h2>
+          <br>
 
-          <h2>Integrantes</h2>
-          <div class="container">
-            <div class="box">
-              <h2>Nombre 1</h2>
-              <img
-                src="https://via.placeholder.com/250"
-                alt="Foto de Nombre 1"
-              />
-              <p class="descrippersonas">Breve descripción de Nombre 1</p>
+          <article class="container_cards" data-aos="fade-up" >
+            <div class="card">
+              <div class="card__image">
+                <img src="../Images/luciano.jpeg" alt="" />
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Luciano Mostaccio</h2>
+                <p>
+                   Luciano es el CEO de la empresa. Tiene estudios en administración de empresas de la Universidad Argentina de la Empresa, y cuenta con años de experiencia en el campo de la consultoría para empresas de la industria de sistemas informáticos. Es un apasionado por ayudar a sus clientes a diferenciarse en el mercado digital a través del desarrollo de aplicaciones y sitios web de alta calidad, así como estrategias de marketing digital efectivas.
+                </p>
+      
+                <p>
+                  Bajo su liderazgo, desde sus inicios el equipo de la empresa se esfuerza continuamente en estar actualizado en las últimas tendencias del área, para garantizar así la entrega de servicios eficientes y de alta calidad que satisfagan las necesidades de sus clientes.
+                </p>
+                <a href="#" class="card__button">Linkedin <span>&rarr;</span></a>
+              </div>
             </div>
-            <div class="box">
-              <h2>Nombre 2</h2>
-              <img
-                src="https://via.placeholder.com/250"
-                alt="Foto de Nombre 2"
-              />
-              <p class="descrippersonas">Breve descripción de Nombre 2</p>
+            <div class="card">
+              <div class="card__image">
+                <img src="../Images/Vivian-O_Donnell-683x1024.jpg" alt="" />
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Nicolás Fernandez</h2>
+                <p>
+                  Nicolás es un experimentado desarrollador y especialista en marketing digital con experiencia en la creación de soluciones tecnológicas personalizadas para empresas pequeñas, medianas y grandes. Graduado en Licenciatura en sistemas en la Universidad de Buenos Aires, su habilidad en el desarrollo web, programación y conocimiento profundo del mercado lo convierten en alguien ideal para liderar proyectos complejos.
+                </p>
+      
+                <p>
+                  Como parte de nuestro equipo de desarrolladores y especialistas en marketing digital, Nicolás aporta una combinación única de habilidades técnicas y creativas, asegurando que cada proyecto cuente con soluciones personalizadas y estrategias digitales efectivas.
+                </p>
+                <a href="#" class="card__button">LinkedIn <span>&rarr;</span></a>
+              </div>
             </div>
-            <div class="box">
-              <h2>Nombre 3</h2>
-              <img
-                src="https://via.placeholder.com/250"
-                alt="Foto de Nombre 3"
-              />
-              <p class="descrippersonas">Breve descripción de Nombre 3</p>
+            <div class="card">
+              <div class="card__image">
+                <img src="../Images/girl.jpg" alt="" />
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Julieta González</h2>
+                <p>
+                  Julieta es la responsable de desarrollo de software en Consultora Digital LM. Con más de 8 años de experiencia en el sector, Julieta ha dirigido con éxito proyectos de desarrollo de aplicaciones y sitios web para empresas de diversos sectores, como el turismo, la salud y la banca. Además, cuenta con una licenciatura en Informática de la Universidad Politécnica de Madrid y un máster en Desarrollo de Software de la Universidad de Barcelona.
+                </p>
+      
+                <p>
+                  Su profundo conocimiento técnico y su habilidad para liderar equipos hacen que sea un miembro clave del equipo de la consultora. Su capacidad para diseñar soluciones técnicas  eficientes es una de las principales razones por las que los clientes eligen trabajar con la empresa.                
+                </p>
+                <a href="#" class="card__button">LinkedIn <span>&rarr;</span></a>
+              </div>
             </div>
           </div>
         </article>
@@ -127,7 +152,7 @@
     <footer>
       <ul class="list-unstyled">
         <li><a href="#top">Ir arriba</a></li>
-        <li><a href="pages/contacto.html">Contacto</a></li>
+        <li><a href="Pages/contacto.html">Contacto</a></li>
         <li><a href="#politica">Política de privacidad</a></li>
       </ul>
     </footer>
@@ -136,5 +161,9 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
