@@ -17,7 +17,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../Styles/estilos.css" />
   </head>
   <body>
@@ -35,7 +35,7 @@
       </nav>
       <!-- navegación para mobile con bootstrap -->
       <div class="navmobile">
-        <div class="collapse" id="navbarToggleExternalContent">
+        <div class="collapse_navbar" id="navbarToggleExternalContent">
           <div class="bg-black p-4">
             <h5 class="text-white h4">Navegación</h5>
             <ul class="list-unstyled" id="navmobilelist">
@@ -109,34 +109,32 @@
                 name="servicios"
                 value="Desarrollo de aplicaciones"
               />
-              <label for="desarrollo_aplicaciones">Desarrollo de aplicaciones</label>
-            
+              <label class="checkboxes" for="desarrollo_aplicaciones"
+                >Desarrollo de aplicaciones</label
+              >
+
               <input
                 type="checkbox"
                 id="desarrollo_sitios_web"
                 name="servicios"
                 value="Desarrollo de sitios web"
               />
-               <label for="desarrollo_sitios_web">Desarrollo de sitios web</label> 
-            
+              <label class="checkboxes" for="desarrollo_sitios_web"
+                >Desarrollo de sitios web</label
+              >
+
               <input
                 type="checkbox"
                 id="campanas_marketing_digital"
                 name="servicios"
                 value="Campañas de marketing digital"
               />
-              <label for="campanas_marketing_digital">Campañas de marketing digital</label> 
+              <label class="checkboxes" for="campanas_marketing_digital"
+                >Campañas de marketing digital</label
+              >
             </div>
-            
-            <div class="buttons">
-              <button type="button">Desarrollo de aplicaciones</button>
-              <button type="button">Desarrolo sitios web</button>
-              <button type="button">Marketing digital</button>
-            </div>
-
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
             <input type="submit" value="Enviar" />
           </form>
         </div>

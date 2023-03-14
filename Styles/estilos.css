@@ -421,6 +421,18 @@ h3 {
   margin-right: 0.1rem;
 }
 
+.collapse_navbar.show{
+  border: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  justify-content: baseline;
+}
+
+.bg-black {
+  width: 100%;
+}
+
 .cardportafolio2:hover {
   transform: scale(0.98);
   border-radius: 20px;
@@ -512,6 +524,11 @@ label {
   color: rgb(0, 0, 0);
 }
 
+.checkboxes{
+  font-weight: 450;
+  margin-left: 5px;
+}
+
 input[type="text"],
 input[type="email"],
 #pais,
@@ -584,25 +601,7 @@ input[type="submit"]:hover {
   }
 
   .checks {
-    display: none;
-  }
-
-  .buttons {
-    display: block;
-  }
-
-  button {
-    background-color: white;
-    width: 100%;
-    padding: 6px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    font-size: 0.7rem;
-  }
-
-  button:active {
-    background-color: #45a049;
+    display: flex;
   }
 
   form input[type="submit"] {
@@ -610,11 +609,14 @@ input[type="submit"]:hover {
     height: 1%;
     margin: auto;
   }
+
+  form input[type="checkbox"] {
+    width: 40px;
+    color: #00ff75;
 }
 
 /* Estilos para el footer */
 footer {
-  grid-area: footer;
   background-color: black;
   margin-top: auto;
   padding: 1em 0;
