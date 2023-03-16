@@ -1,0 +1,183 @@
+@import "./variables";
+@import "./mixins";
+
+/* Estilos para el header en teléfonos móvil */
+@media only screen and (max-width: 943px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .container-fluid {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end !important;
+  }
+
+  .navbar-toggler {
+    width: 90px;
+  }
+
+  .navmobile {
+    display: inline;
+    background-color: $black;
+    margin-top: 5rem;
+  }
+
+  #navmobilelist {
+    li {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: $white;
+        background-color: $black;
+        padding: 1rem;
+        &:hover {
+          &:not(.active) {
+            background-color: rgb(19, 18, 18);
+          }
+        }
+      }
+      a.active {
+        background-color: $greenbutton;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+//Estilos para celulares del index
+@media only screen and (max-width: 768px) {
+  .bannerindex {
+    height: 15rem;
+  }
+
+  .imghome {
+    width: 15rem;
+    height: 15rem;
+    display: block;
+    margin: 0 auto 2rem;
+  }
+
+  .listaservicios {
+    border: $greenbutton;
+    border-style: double;
+  }
+
+  .razoneselegirnos {
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  .imagenesclientes img {
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+
+//Pagina Servicios
+//Página Servicios para móvil
+@media (max-width: 768px) {
+  .servicios {
+    display: block;
+  }
+  .serv {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .iframe {
+    display: none;
+  }
+  .iframecelu {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+  }
+}
+
+//Página Nosotros para móvil
+@media only screen and (max-width: 1326px) {
+  .container_cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    width: 88vw;
+    height: max-content;
+  }
+}
+
+//Página Porfolio para móvil*/
+
+@media (max-width: 1270px) {
+  .collapse.show {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cardportafolio {
+    margin-bottom: 2rem;
+  }
+}
+
+//Estilos para el formulario de contacto
+//estilos para que el formulario se adapte a dispositivos móviles
+@media (max-width: 768px) {
+  form {
+    width: 75%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  form label {
+    font-size: 12px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .checks {
+    display: flex;
+  }
+
+  form input[type="submit"] {
+    width: 40%;
+    height: 1%;
+    margin: auto;
+  }
+
+  form input[type="checkbox"] {
+    width: 40px;
+  }
+}
+
+// Estilos para el footer
+//estilos para que el footer se adapte a dispositivos móviles
+@media (max-width: 768px) {
+  footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+  }
+}

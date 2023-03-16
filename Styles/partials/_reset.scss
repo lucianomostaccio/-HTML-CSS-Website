@@ -1,0 +1,12 @@
+@import "./mixins";
+
+// Reset estilos
+* {
+  @include no-margin-padding-box;
+}
+
+ul,
+ol {
+  @include no-margin-padding-box;
+  list-style-type: none;
+}

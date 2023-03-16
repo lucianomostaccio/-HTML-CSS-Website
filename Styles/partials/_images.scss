@@ -1,0 +1,11 @@
+@import "./variables";
+@import "./mixins";
+
+.imagenesclientes {
+  text-align: center;
+  img {
+    padding: 3rem;
+    width: 300px;
+    height: 250px;
+  }
+}
