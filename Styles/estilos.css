@@ -354,7 +354,7 @@ label {
   margin-left: 5px;
 }
 
-input[type=text] {
+input[type="text"] {
   width: 100%;
   padding: 6px;
   border: 1px solid #ccc;
@@ -364,7 +364,7 @@ input[type=text] {
   resize: vertical;
 }
 
-input[type=email] {
+input[type="email"] {
   width: 100%;
   padding: 6px;
   border: 1px solid #ccc;
@@ -394,7 +394,7 @@ textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: #4caf50;
   color: rgb(255, 255, 255);
   padding: 12px 20px;
@@ -403,7 +403,7 @@ input[type=submit] {
   cursor: pointer;
   float: right;
 }
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
@@ -414,7 +414,7 @@ input[type=submit]:hover {
   display: flex;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   margin-left: 1rem;
   display: flex;
   align-items: center;
@@ -567,12 +567,12 @@ footer a {
   .checks {
     display: flex;
   }
-  form input[type=submit] {
+  form input[type="submit"] {
     width: 40%;
     height: 1%;
     margin: auto;
   }
-  form input[type=checkbox] {
+  form input[type="checkbox"] {
     width: 40px;
   }
 }
