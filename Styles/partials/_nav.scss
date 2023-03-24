@@ -11,12 +11,36 @@
     justify-content: baseline;
   }
 }
+
+.bg-black {
+  width: 100%;
+}
+
 nav {
+  display: inline-flex;
+  width: 100%;
+  background-color: $black;
+  justify-content: flex-end;
+  align-items: center;
+  .linklogonav {
+    position: absolute;
+    left: 0;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-family: $titlesFont;
+    font-weight: bold;
+    color: $white-grey;
+    .logo {
+      width: 3.5rem;
+      height: 50px;
+      border-style: solid;
+      border-color: $border-color_1;
+      border-width: 1px;
+    }
+  }
   ul {
     list-style-type: none;
-    background-color: $black;
     display: flex;
-    justify-content: flex-end;
     li {
       a {
         text-decoration: none;

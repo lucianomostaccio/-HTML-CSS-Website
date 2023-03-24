@@ -10,7 +10,6 @@
   align-items: flex-start;
   height: 25rem;
   margin-bottom: 2.5rem;
-  padding-bottom: 1rem;
   .titulo_principal {
     font-family: $titlesFont;
     font-weight: bold;
@@ -27,17 +26,21 @@
   color: $white;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
+  margin-top: 1.5rem;
 }
 
-.logo {
-  z-index: 1;
-  width: 14rem;
-  height: auto;
-  background-color: $mainColor;
+.linklogobanner{
   position: absolute;
   right: 0;
   margin-right: 10rem;
-  border-style: solid;
-  border-color: $border-color_1;
-  opacity: 0.95;
+              .logo {
+                      z-index: 1;
+                      width: 14rem;
+                      height: auto;
+                      background-color: $mainColor;
+                      border-style: solid;
+                      border-color: $border-color_1;
+                      opacity: 0.95;
+                    }
 }
+

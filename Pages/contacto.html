@@ -4,11 +4,17 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Consultora</title>
+    <title>Contacto - Consultora Digital LM</title>
     <link rel="icon" href="../Images/logo/favicon.png" />
-    <meta name="description" content="Contacta a Consultora LM para solicitar nuestros servicios de desarrollo de aplicaciones y sitios web, y/o en estrategias de marketing digital efectivas" />
+    <meta
+      name="description"
+      content="Contacta a Consultora LM para solicitar nuestros servicios de desarrollo de aplicaciones y sitios web, y/o en estrategias de marketing digital efectivas"
+    />
     <meta name="author" content="Luciano Damian Mostaccio" />
-    <meta name="keywords" content="consultora,digital,desarrollo,aplicaciones,web,sitios,marketing,adwords,publicidad" />
+    <meta
+      name="keywords"
+      content="consultora,digital,desarrollo,aplicaciones,web,sitios,marketing,adwords,publicidad"
+    />
     <meta name="robots" content="index, follow" />
     <link rel="apple-touch-icon" href="../Images/logo/logo.png" />
     <link
@@ -24,6 +30,15 @@
     <header>
       <!-- barra navegación -->
       <nav>
+        <!-- Nuevo elemento div para el enlace en navbar -->
+        <a class="linklogonav" href="../index.html">
+          <img
+            class="logo"
+            src="/Images/logo/logo_transparent.png"
+            alt="logo consultora digital LM"
+          />
+          <span class="title_navbarlogo">CONSULTORA DIGITAL LM</span>
+        </a>
         <!-- botones navegación -->
         <ul>
           <li><a href="../index.html">Inicio</a></li>
@@ -69,7 +84,12 @@
     <main class="formpage">
       <div class="content">
         <div class="form">
-          <form action="enviar_mensaje.php" method="post">
+          <form
+            name="contacto_consultora"
+            action="enviar_mensaje.php"
+            method="post"
+            netlifly
+          >
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required />
 
@@ -78,7 +98,7 @@
 
             <label for="pais">País:</label>
             <select id="pais" name="pais" required>
-              <option value="">Seleccione un pais</option>
+              <option value="">Seleccione un país</option>
               <option value="Argentina">Argentina</option>
               <option value="Bolivia">Bolivia</option>
               <option value="Chile">Chile</option>

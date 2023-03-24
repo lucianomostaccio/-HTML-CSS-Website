@@ -1,20 +1,18 @@
 @import "./variables";
 @import "./mixins";
 
-/* Estilos para el header en teléfonos móvil */
-@media only screen and (max-width: 943px) {
-  .logo {
-    display: none;
-  }
-}
-
+//estilos navbar
 @media only screen and (max-width: 768px) {
   nav ul {
     display: none;
   }
 
+  .banner {
+    margin-top: 4.5rem;
+  }
+
   .container-fluid {
-    margin-top: 1rem;
+    padding: 0.5rem;
     display: flex;
     justify-content: flex-end !important;
   }
@@ -23,10 +21,25 @@
     width: 90px;
   }
 
+  nav {
+    display: block;
+    position: absolute;
+    .linklogonav {
+      z-index: 4;
+      position: fixed;
+      margin-top: 0.7rem;
+    }
+  }
+
   .navmobile {
-    display: inline;
+    display: block;
+    position: fixed;
+    width: 100%;
     background-color: $black;
-    margin-top: 5rem;
+    z-index: 2;
+    .collapse.show {
+      margin-top: 3rem;
+    }
   }
 
   #navmobilelist {
@@ -39,6 +52,9 @@
         color: $white;
         background-color: $black;
         padding: 1rem;
+        border-top: solid 0.1px rgb(24, 24, 24);
+        border-bottom: solid 0.1px rgb(24, 24, 24);
+
         &:hover {
           &:not(.active) {
             background-color: rgb(19, 18, 18);
@@ -52,10 +68,27 @@
   }
 }
 
-@media (max-width: 768px) {
-  .carousel-item img {
-    width: 300px;
-    height: 200px;
+//estilos navbar pantallas muy chicas
+@media only screen and (max-width: 415px) {
+  nav {
+    .linklogonav {
+      .title_navbarlogo {
+        display: none;
+      }
+    }
+  }
+}
+
+// Estilos para el banner en teléfonos móvil
+@media only screen and (max-width: 1087px) {
+  .linklogobanner {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .linklogobanner {
+    display: none;
   }
 }
 
@@ -64,24 +97,18 @@
   .bannerindex {
     height: 15rem;
   }
-
-  .imghome {
-    width: 15rem;
-    height: 15rem;
-    display: block;
-    margin: 0 auto 2rem;
+  .carousel-item img {
+    width: 300px;
+    height: 200px;
   }
-
   .listaservicios {
     border: $greenbutton;
     border-style: double;
   }
-
   .razoneselegirnos {
     display: block;
     margin-bottom: 3rem;
   }
-
   .imagenesclientes img {
     padding: 10px;
     display: block;
@@ -90,9 +117,39 @@
   }
 }
 
+//estilos font banner pantallas chicas
+@media only screen and (max-width: 376px) {
+  .banner .titulo_principal {
+    font-size: 1.5rem;
+  }
+}
+.slogan {
+  font-size: 1rem;
+}
+
+//estilos flechas carrousel pantallas chicas
+@media only screen and (max-width: 514px) {
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 15%;
+  }
+}
+
+//estilos carrousel e imagénes clientes home pantallas muy chicas
+@media only screen and (max-width: 410px) {
+  .carousel-item img {
+    width: 75vw;
+    height: 200px;
+  }
+
+  .imagenesclientes img {
+    width: 80vw;
+  }
+}
+
 //Pagina Servicios
 //Página Servicios para móvil
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .servicios {
     display: block;
   }
@@ -126,7 +183,7 @@
 
 //Página Porfolio para móvil*/
 
-@media (max-width: 1270px) {
+@media only screen and (max-width: 1270px) {
   .collapse.show {
     display: flex;
     flex-wrap: wrap;
@@ -138,13 +195,11 @@
 
 //Estilos para el formulario de contacto
 //estilos para que el formulario se adapte a dispositivos móviles
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   form {
     width: 75%;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
     padding: 1rem;
-    padding-bottom: 2rem;
+    margin-top: 10rem;
   }
 
   form label {
@@ -162,7 +217,7 @@
   }
 
   form input[type="submit"] {
-    width: 40%;
+    width: 100%;
     height: 1%;
     margin: auto;
   }
@@ -172,9 +227,21 @@
   }
 }
 
+@media only screen and (max-width: 442px) {
+  .checks {
+    flex-direction: column;
+    align-items: center;
+  }
+  form input[type="checkbox"] {
+    margin: 0.5rem;
+    min-width: 40px;
+    min-height: 20px;
+  }
+}
+
 // Estilos para el footer
 //estilos para que el footer se adapte a dispositivos móviles
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   footer ul {
     display: flex;
     justify-content: space-evenly;
