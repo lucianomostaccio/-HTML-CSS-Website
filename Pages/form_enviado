@@ -80,86 +80,14 @@
       </div>
     </header>
 
-    <!-- form -->
-    <main class="formpage">
-      <div class="content">
-        <div class="form">
-          <form
-            name="contacto_consultora"
-            method="post"
-            action="/pages/form_enviado"
-            netlifly
-          >
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required />
+    <section>
+      <article>
+        <h1>Gracias por contactarnos!</h1>
+        <h2>Su formulario ha sido enviado. Nos contactaremos a la brevedad</h2>
+        <a href="/contacto.html">VOLVER ATRÁS</a>
+      </article>
+    </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="pais">País:</label>
-            <select id="pais" name="pais" required>
-              <option value="">Seleccione un país</option>
-              <option value="Argentina">Argentina</option>
-              <option value="Bolivia">Bolivia</option>
-              <option value="Chile">Chile</option>
-              <option value="Colombia">Colombia</option>
-              <option value="Costa Rica">Costa Rica</option>
-              <option value="Cuba">Cuba</option>
-              <option value="Ecuador">Ecuador</option>
-              <option value="El Salvador">El Salvador</option>
-              <option value="España">España</option>
-              <option value="Guatemala">Guatemala</option>
-              <option value="Honduras">Honduras</option>
-              <option value="México">México</option>
-              <option value="Nicaragua">Nicaragua</option>
-              <option value="Panamá">Panamá</option>
-              <option value="Paraguay">Paraguay</option>
-              <option value="Perú">Perú</option>
-              <option value="Puerto Rico">Puerto Rico</option>
-              <option value="República Dominicana">República Dominicana</option>
-              <option value="Uruguay">Uruguay</option>
-              <option value="Venezuela">Venezuela</option>
-            </select>
-
-            <label for="servicios">Servicios requeridos:</label>
-            <div class="checks">
-              <input
-                type="checkbox"
-                id="desarrollo_aplicaciones"
-                name="servicios"
-                value="Desarrollo de aplicaciones"
-              />
-              <label class="checkboxes" for="desarrollo_aplicaciones"
-                >Desarrollo de aplicaciones</label
-              >
-
-              <input
-                type="checkbox"
-                id="desarrollo_sitios_web"
-                name="servicios"
-                value="Desarrollo de sitios web"
-              />
-              <label class="checkboxes" for="desarrollo_sitios_web"
-                >Desarrollo de sitios web</label
-              >
-
-              <input
-                type="checkbox"
-                id="campanas_marketing_digital"
-                name="servicios"
-                value="Campañas de marketing digital"
-              />
-              <label class="checkboxes" for="campanas_marketing_digital"
-                >Campañas de marketing digital</label
-              >
-            </div>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-            <input type="submit" value="Enviar" />
-          </form>
-        </div>
-      </div>
-    </main>
     <footer class="footer">
       <ul class="list-unstyled">
         <li><a href="#top">Ir arriba</a></li>
@@ -172,9 +100,5 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
