@@ -194,7 +194,7 @@
 //Estilos para el formulario de contacto
 //estilos para que el formulario se adapte a dispositivos móviles
 @media only screen and (max-width: 768px) {
-  form {
+  .formpage .content form {
     width: 75%;
     padding: 1rem;
     margin-top: 10rem;
