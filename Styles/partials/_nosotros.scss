@@ -7,16 +7,16 @@
   @include flex-justifycenter;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 3rem;
 }
 .card {
   display: flex;
   flex-wrap: nowrap;
   background-color: #333;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
-  margin: 2rem;
-  margin-right: 2.3rem;
+  margin: 0.5rem;
   width: 33.33%;
-  height: max-content;
+  height: 65rem;
 }
 .card__image {
   @include flex-justifycenter;
@@ -38,29 +38,25 @@
     font-family: $pFont;
     font-size: 1rem;
     color: $grey;
-    &:not(:last-child) {
-      margin-bottom: 1.5rem;
-    }
   }
 }
+
+p.segundoparrafocard{
+  margin-bottom:6rem;
+}
+
 .card__title {
   font-family: $cardsTitle;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: $white;
   --body-color: $grey;
 }
-.card__subtitle {
-  font-size: 1rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin-bottom: 2.5rem;
-}
 .card__button {
+  text-align: center;
   display: inline-block;
   text-decoration: none;
   color: $grey;
   padding: 1rem 2.5rem;
-  margin-top: 1rem;
   border: 2px solid $grey;
   border-radius: 6px;
   span {

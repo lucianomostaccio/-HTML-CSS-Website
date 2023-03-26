@@ -66,7 +66,7 @@ nav ul li a:hover:not(.active) {
   background-color: rgb(19, 18, 18);
 }
 nav ul li a.active {
-  background-color: #04aa6d;
+  background-color: rgb(4, 170, 109);
 }
 
 main {
@@ -116,7 +116,7 @@ main {
   z-index: 1;
   width: 14rem;
   height: auto;
-  background-color: #04aa6d;
+  background-color: rgb(4, 170, 109);
   border-style: solid;
   border-color: rgb(0, 128, 0);
   opacity: 0.95;
@@ -126,6 +126,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 1rem 1rem 1rem;
   text-align: justify;
+  color: rgb(255, 255, 255);
 }
 
 h2 {
@@ -133,7 +134,7 @@ h2 {
   text-align: center;
   margin-bottom: 1rem;
   margin-top: 2rem;
-  color: #04aa6d;
+  color: rgb(4, 170, 109);
 }
 
 h3 {
@@ -141,7 +142,7 @@ h3 {
   text-align: center;
   margin-bottom: 1rem;
   font-size: large;
-  color: #04aa6d;
+  color: rgb(4, 170, 109);
 }
 
 .imagenesclientes {
@@ -154,14 +155,15 @@ h3 {
 }
 
 .carousel-inner {
-  margin-bottom: 2rem;
+  margin: 2rem, 0;
 }
 .carousel-inner img {
   width: 500px;
   height: 300px;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   width: 35%;
 }
 
@@ -170,6 +172,7 @@ h3 {
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .card {
@@ -177,10 +180,9 @@ h3 {
   flex-wrap: nowrap;
   background-color: #333;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
-  margin: 2rem;
-  margin-right: 2.3rem;
+  margin: 0.5rem;
   width: 33.33%;
-  height: max-content;
+  height: 65rem;
 }
 
 .card__image {
@@ -207,30 +209,24 @@ h3 {
   font-size: 1rem;
   color: #afafaf;
 }
-.card__body p:not(:last-child) {
-  margin-bottom: 1.5rem;
+
+p.segundoparrafocard {
+  margin-bottom: 6rem;
 }
 
 .card__title {
   font-family: "Playfair Display", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: rgb(255, 255, 255);
   --body-color: $grey;
 }
 
-.card__subtitle {
-  font-size: 1rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin-bottom: 2.5rem;
-}
-
 .card__button {
+  text-align: center;
   display: inline-block;
   text-decoration: none;
   color: #afafaf;
   padding: 1rem 2.5rem;
-  margin-top: 1rem;
   border: 2px solid #afafaf;
   border-radius: 6px;
 }
@@ -250,7 +246,7 @@ h3 {
 
 .btn.btn-primary {
   margin-top: 2rem;
-  background-color: #04aa6d;
+  background-color: rgb(4, 170, 109);
   --bs-btn-active-bg: #055502;
   display: flex;
   align-items: center;
@@ -276,7 +272,6 @@ h3 {
   transition: all 0.2s;
   display: flex;
   justify-content: center;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 .cardportafolio2:hover {
@@ -297,19 +292,26 @@ h3 {
   display: flex;
   align-items: center;
   align-content: center;
-  flex-direction: row;
+  overflow: hidden;
   justify-content: space-around;
-  border: #00ff75;
-  border-style: solid;
-  border-width: 0.05rem;
   border-radius: 15px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   margin-right: 0.1rem;
 }
 
 #collapseExample3 {
   margin-bottom: 2rem;
+}
+
+.collapsing {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+  justify-content: space-around;
+  border-radius: 15px;
+  padding: 1rem 0;
+  margin-right: 0.1rem;
 }
 
 .textoservicio {
@@ -340,10 +342,6 @@ h3 {
   align-items: center;
   width: 33.33%;
   margin: 10px;
-}
-
-.nuestrosservicios {
-  margin-bottom: 2rem;
 }
 
 .listaservicios {
@@ -527,7 +525,7 @@ footer a {
     background-color: rgb(19, 18, 18);
   }
   #navmobilelist li a.active {
-    background-color: #04aa6d;
+    background-color: rgb(4, 170, 109);
   }
 }
 @media only screen and (max-width: 415px) {
@@ -554,7 +552,7 @@ footer a {
     height: 200px;
   }
   .listaservicios {
-    border: #04aa6d;
+    border: rgb(4, 170, 109);
     border-style: double;
   }
   .razoneselegirnos {
@@ -566,6 +564,16 @@ footer a {
     display: block;
     margin: 0 auto;
     margin-bottom: 2rem;
+  }
+  .cont_tarjetashome {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cont_tarjetashome .tarjetahome {
+    width: 80vw;
+  }
+  .cont_tarjetashome .tarjetahome p {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 376px) {
@@ -611,14 +619,16 @@ footer a {
     overflow: hidden;
   }
 }
-@media only screen and (max-width: 1326px) {
+@media only screen and (max-width: 1110px) {
   .container_cards {
-    display: flex;
     flex-direction: column;
   }
-  .card {
+  .container_cards .card {
     width: 88vw;
     height: max-content;
+  }
+  .segundoparrafocard {
+    margin-bottom: -1rem;
   }
 }
 @media only screen and (max-width: 1270px) {
@@ -686,16 +696,16 @@ footer a {
 }
 
 .atras_form_enviado {
-  background-color: #4caf50; /* Color de fondo */
-  border: none; /* Borde */
-  color: white; /* Color del texto */
-  padding: 15px 32px; /* Padding */
-  text-align: center; /* Alineación de texto */
-  text-decoration: none; /* Decoración de texto */
-  display: inline-block; /* Bloque en línea */
-  font-size: 16px; /* Tamaño de fuente */
-  margin: 20px; /* Margen */
-  cursor: pointer; /* Cursor */
+  background-color: #45a049;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
+  cursor: pointer;
   display: block;
   margin: 0 auto;
   width: 50%;
@@ -705,6 +715,37 @@ footer a {
 /* Estilos cuando se pasa el mouse sobre el botón */
 .atras_form_enviado:hover {
   background-color: #3e8e41;
+}
+
+.primertexto {
+  margin-bottom: 3rem;
+}
+
+.nuestrosservicios {
+  margin-bottom: 4rem;
+}
+
+.cont_tarjetashome {
+  display: flex;
+  justify-content: center;
+}
+
+.tarjetahome {
+  width: calc(33.33% - 22px);
+  padding: 20px;
+  margin: 10px;
+  background-color: #1a1a1a;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}
+.tarjetahome h3 {
+  font-size: 25px;
+  margin-top: 1rem;
+}
+.tarjetahome p {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=estilos.css.map */

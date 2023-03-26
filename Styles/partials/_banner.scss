@@ -29,18 +29,17 @@
   margin-top: 1.5rem;
 }
 
-.linklogobanner{
+.linklogobanner {
   position: absolute;
   right: 0;
   margin-right: 10rem;
-              .logo {
-                      z-index: 1;
-                      width: 14rem;
-                      height: auto;
-                      background-color: $mainColor;
-                      border-style: solid;
-                      border-color: $border-color_1;
-                      opacity: 0.95;
-                    }
+  .logo {
+    z-index: 1;
+    width: 14rem;
+    height: auto;
+    background-color: $mainColor;
+    border-style: solid;
+    border-color: $border-color_1;
+    opacity: 0.95;
+  }
 }
-

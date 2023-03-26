@@ -1,23 +1,22 @@
 // Mixins
 @mixin no-margin-padding-box {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  
+
 @mixin flex-justifyend {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @mixin flex-justifycenter {
-    display:flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-@mixin flex-alignc{
-    display: flex;
-    align-items: center;
-    align-content: center;
+@mixin flex-alignc {
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
-  
