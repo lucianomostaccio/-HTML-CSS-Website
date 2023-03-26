@@ -7,26 +7,24 @@
 
 .nuestrosservicios {
   margin-bottom: 4rem;
-}
-
-.cont_tarjetashome {
-  @include flex-justifycenter;
-}
-
-.tarjetahome {
-  width: calc(33.33% - 22px);
-  padding: 20px;
-  margin: 10px;
-  background-color: #1a1a1a;
-  flex-wrap: wrap;
-  border-radius: 20px;
-  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
-  h3 {
-    font-size: 25px;
-    margin-top: 1rem;
-  }
-  p {
-    font-weight: bold;
-    color: $white;
+  .cont_tarjetashome {
+    @include flex-justifycenter;
+    .tarjetahome {
+      width: calc(33.33% - 22px);
+      padding: 20px;
+      margin: 10px;
+      background-color: #1a1a1a;
+      flex-wrap: wrap;
+      border-radius: 20px;
+      box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+      h3 {
+        font-size: 25px;
+        margin-top: 1rem;
+      }
+      p {
+        font-weight: bold;
+        color: $white;
+      }
+    }
   }
 }

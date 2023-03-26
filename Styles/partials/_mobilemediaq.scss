@@ -6,21 +6,18 @@
   nav ul {
     display: none;
   }
-
-  .banner {
-    margin-top: 4.5rem;
-  }
-
   .container-fluid {
     padding: 0.5rem;
     display: flex;
     justify-content: flex-end !important;
+    .navbar-toggler {
+      width: 90px;
+    }
   }
-
-  .navbar-toggler {
-    width: 90px;
+  .banner {
+    margin-top: 4.5rem;
+    height: 17rem;
   }
-
   nav {
     display: block;
     position: absolute;
@@ -30,7 +27,6 @@
       margin-top: 0.7rem;
     }
   }
-
   .navmobile {
     display: block;
     position: fixed;
@@ -94,16 +90,24 @@
 
 //Estilos para celulares del index
 @media only screen and (max-width: 768px) {
-  .bannerindex {
-    height: 15rem;
+  .banner {
+    height: 18rem;
   }
   .carousel-item img {
     width: 300px;
     height: 200px;
   }
-  .listaservicios {
-    border: $mainColor;
-    border-style: double;
+  .nuestrosservicios {
+    .cont_tarjetashome {
+      flex-direction: column;
+      align-items: center;
+      .tarjetahome {
+        width: 80vw !important;
+        p {
+          font-size: 15px;
+        }
+      }
+    }
   }
   .razoneselegirnos {
     display: block;
@@ -115,26 +119,15 @@
     margin: 0 auto;
     margin-bottom: 2rem;
   }
-  .cont_tarjetashome {
-    flex-direction: column;
-    align-items: center;
-    .tarjetahome {
-      width: 80vw;
-      p {
-        font-size: 13px;
-      }
-    }
-  }
 }
-
 //estilos font banner pantallas chicas
 @media only screen and (max-width: 376px) {
   .banner .titulo_principal {
     font-size: 1.5rem;
   }
-}
-.slogan {
-  font-size: 1rem;
+  .slogan {
+    font-size: 2rem;
+  }
 }
 
 //estilos flechas carrousel pantallas chicas
@@ -160,22 +153,15 @@
 //Pagina Servicios
 //Página Servicios para móvil
 @media only screen and (max-width: 768px) {
-  .servicios {
-    display: block;
-  }
-  .serv {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
-  }
-  .iframe {
-    display: none;
-  }
-  .iframecelu {
-    display: block;
-    text-align: center;
-    overflow: hidden;
+  .textoservicio {
+    .iframe {
+      display: none;
+    }
+    .iframecelu {
+      display: block;
+      text-align: center;
+      overflow: hidden;
+    }
   }
 }
 
@@ -212,30 +198,23 @@
     width: 75%;
     padding: 1rem;
     margin-top: 10rem;
-  }
+    form label {
+      font-size: 12px;
+    }
+    form input,
+    form textarea {
+      font-size: 15px;
+      padding: 10px;
+    }
+    form input[type="submit"] {
+      width: 100%;
+      height: 1%;
+      margin: auto;
+    }
 
-  form label {
-    font-size: 12px;
-  }
-
-  form input,
-  form textarea {
-    font-size: 15px;
-    padding: 10px;
-  }
-
-  .checks {
-    display: flex;
-  }
-
-  form input[type="submit"] {
-    width: 100%;
-    height: 1%;
-    margin: auto;
-  }
-
-  form input[type="checkbox"] {
-    width: 40px;
+    form input[type="checkbox"] {
+      width: 40px;
+    }
   }
 
   //estilos página móvil form enviado
@@ -244,7 +223,7 @@
   }
 }
 
-@media only screen and (max-width: 442px) {
+@media only screen and (max-width: 664px) {
   .checks {
     flex-direction: column;
     align-items: center;

@@ -8,64 +8,62 @@
   flex-direction: row;
   align-items: center;
   margin-bottom: 3rem;
-}
-.card {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: #333;
-  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
-  margin: 0.5rem;
-  width: 33.33%;
-  height: 65rem;
-}
-.card__image {
-  @include flex-justifycenter;
-  img {
-    width: 90%;
-    width: 200px;
-    height: 15rem;
-    margin-top: 2rem;
-    margin-bottom: -2rem;
-    object-fit: cover;
-    border-radius: 40px;
-  }
-}
-.card__body {
-  flex: 1;
-  padding: 1.5rem;
-  text-align: center;
-  p {
-    font-family: $pFont;
-    font-size: 1rem;
-    color: $grey;
-  }
-}
-
-p.segundoparrafocard{
-  margin-bottom:6rem;
-}
-
-.card__title {
-  font-family: $cardsTitle;
-  font-size: 1.8rem;
-  color: $white;
-  --body-color: $grey;
-}
-.card__button {
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-  color: $grey;
-  padding: 1rem 2.5rem;
-  border: 2px solid $grey;
-  border-radius: 6px;
-  span {
-    display: inline-block;
-    transition: transform 0.25s;
-  }
-  &:hover {
-    span {
-      transform: translateX(0.75rem);
+  .card {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #333;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    margin: 0.5rem;
+    width: 33.33%;
+    height: 65rem;
+    .card__image {
+      @include flex-justifycenter;
+      img {
+        width: 90%;
+        width: 200px;
+        height: 15rem;
+        margin-top: 2rem;
+        margin-bottom: -2rem;
+        object-fit: cover;
+        border-radius: 40px;
+      }
+    }
+    .card__body {
+      flex: 1;
+      padding: 1.5rem;
+      text-align: center;
+      .card__title {
+        font-family: $cardsTitle;
+        font-size: 1.8rem;
+        color: $white;
+        --body-color: $grey;
+      }
+      p {
+        font-family: $pFont;
+        font-size: 1rem;
+        color: $grey;
+      }
+      p.segundoparrafocard {
+        margin-bottom: 6rem;
+      }
+      .card__button {
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        color: $grey;
+        padding: 1rem 2.5rem;
+        border: 2px solid $grey;
+        border-radius: 6px;
+        span {
+          display: inline-block;
+          transition: transform 0.25s;
+        }
+        &:hover {
+          span {
+            transform: translateX(0.75rem);
+          }
+        }
+      }
     }
   }
 }
